@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./all.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+    <title></title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+      }
+      .online {
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+      h1 {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 10px;
+      }
+      .reload {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+      }
+      .sun {
+        position: absolute;
+        right: 0;
+        margin: 30px;
+        cursor: pointer;
+      }
+      .moon {
+        position: absolute;
+        right: 0;
+        margin: 30px;
+        display: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="fa-regular fa-sun sun text-white text-[30px]"></button>
+    <button class="fa-solid fa-moon moon text-black text-[30px]"></button>
+    <div class="online w-[35px] h-[35px]"></div>
+    <button
+      class="reload bg-white p-3 font-bold tracking-[3px] rounded-md hover:bg-slate-100 duration-150"
+    >
+      Check
+    </button>
+    <script src="./all.js"></script>
+    <script src="./all.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
